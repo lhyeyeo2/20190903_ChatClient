@@ -27,7 +27,7 @@ class ClientChatter extends Thread {
 
 	public ClientChatter() {
 		try {
-			socket = new Socket("localhost", 9002);
+			socket = new Socket("localhost", 5001);
 
 			br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			pw = new PrintWriter(socket.getOutputStream());
